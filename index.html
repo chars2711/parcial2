@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/svg+xml" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamer House</title>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+    <header>
+        <div class="header-section container">
+            <h1>Programación I | Parcial 2 | GETTE CARLOS | Mi carrito</h1>
+            <div class="category_list">
+                Filtro:
+                <a href="#" class="category_item" category="all">Todo</a> | 
+                <a href="#" class="category_item" category="nintendo">Nintendo</a> | 
+                <a href="#" class="category_item" category="play">PlayStation</a> | 
+                <a href="#" class="category_item" category="xbox">Xbox</a>
+            </div>
+            <div>
+                <img onmouseover="showCart(this)" class="cart" src="./images/cart.png" alt="">
+                <p class="count-product">0</p>
+            </div>
+            <div class="cart-products" id="products-id">
+                <p class="close-btn" onclick="closeBtn()">X</p>
+                <h3>Mi carrito</h3>
+                <div class="card-items">
+                </div>
+                <h2>Total: <strong class="price-total">0</strong> $</h2>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section></section>
+        <section class="container">
+            <div class="products" id="producto">
+					<div class="product-item" category="nintendo">
+                <div class="carts">
+                    <div>
+                        <img src="productos/producto1.jpg" alt="Nombre del producto" />
+                        <p><span>64.99</span>$</p>
+                    </div>
+                    <h2 class="title">Mario Kart 8</h2>
+                                    <p>Sal a la carretera con la versión definitiva de <strong>Mario Kart 8</strong> y juega en cualquier momento y en cualquier lugar! Compite con tus amigos o enfréntate a 
+                                        ellos en un modo de batalla revisado en campos de batalla nuevos y antiguos. Juega <strong>localmente</strong> en <strong>multijugador</strong> de hasta 4 jugadores en 1080p mientras juegas en modo TV. 
+                                        Cada pista de la versión de Wii U, incluido el contenido descargable, regresa gloriosamente. Además, los <em>Inklings</em> aparecen como personajes invitados completamente nuevos, 
+                                        junto con los favoritos que regresan, como <em>King Boo</em>, <em>Dry Bones</em> y <em>Bowser Jr</em></p>
+                    <a href="" data-id="1" class="btn-add-cart">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product-item" category="play">
+                <div class="carts">
+                    <div>
+                        <img src="productos/producto2.jpg" alt="Nombre del producto" />
+                        <p><span>69.99</span>$</p>
+                    </div>
+                    <h2 class="title">God Of War</h2>
+                    <p>La historia de <strong>God of War</strong> cuenta con <em>Kratos</em> y <em>Atreus</em> que tendrán una importancia vital para el 
+                        desarrollo de los acontecimientos de la secuela, la cual por supuesto incluirá un buen puñado de nuevas caras</p>
+                    <a href="" class="btn-add-cart" data-id="2">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product-item" category="xbox">
+                <div class="carts">
+                    <div>
+                        <img src="productos/producto3.jpg" alt="Nombre del producto" />
+                        <p><span>49.99</span>$</p>
+                    </div>
+                    <h2 class="title">Forza Horizont 5</h2>
+                    <p> ¡Te espera tu aventura definitiva en <em>Horizon</em>! Conduce cientos de autos fenomenales de todo el mundo en emocionantes expediciones a lo largo y 
+                        ancho de los <strong>impactantes paisajes</strong> de <em>México</em>, en un juego ambientado en un mundo abierto que está en constante evolución.</p>
+                    <a href="" data-id="3" class="btn-add-cart">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product-item" category="play">
+                <div class="carts">
+                    <div>
+                        <img src="productos/producto_5.jpg" alt="Nombre del producto" />
+                        <p><span>799.99</span>$</p>
+                    </div>
+                    <h2 class="title">PlayStation 5</h2>
+                    <p> Es una consola de videojuegos de sobremesa creada por la empresa <em>Sony Interactive Entertainment</em>, modelo base con una 
+                        unidad de disco óptico compatible con <em>Ultra HD Blu-ray</em>.</p>
+                    <a href="" data-id="4" class="btn-add-cart">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product-item" category="nintendo">
+                <div class="carts">
+                    <div>
+                        <img src="productos/producto_4.jpg" alt="Nombre del producto" />
+                        <p><span>789.95</span>$</p>
+                    </div>
+                    <h2 class="title">Nintendo Switch Oled</h2>
+                    <p>La nueva consola cuenta con una vibrante pantalla OLED de 7 pulgadas, un soporte ajustable y amplio, una base con puerto LAN 
+                        para conexión por cable, almacenamiento interno de 64 GB y audio mejorado.</p>
+                    <a href="" data-id="5" class="btn-add-cart">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product-item" category="xbox">
+                <div class="carts">
+                    <div>
+                        <img src="productos/producto_6.jpg" alt="Nombre del producto" />
+                        <p><span>699.99</span>$</p>
+                    </div>
+                    <h2 class="title">Xbox Series X</h2>
+                    <p>Ofrece velocidades de cuadro sensacionalmente suaves de hasta 120 FPS con la explosión visual que ofrece HDR. 
+                        Sumérgete con personajes más nítidos y detalles imposibles con auténtico 4K.</p>
+                    <a href="" data-id="6" class="btn-add-cart">Agregar al carrito</a>
+                </div>
+            </div></div>
+        </section>
+    </main>
+	<footer>
+		<ul>
+			<li>Profesor Sergio Medina</li>
+			<li>
+				<a href="mailto:sergiod.medina@davinci.edu.ar?subject=P1%20-%20Consulta%20-%20DW2[M|T|N][A|B]%20-%20Apellido,%20Nombre" target="_blank">sergiod.medina@davinci.edu.ar</a>
+			</li>
+			<li>Programación 1</li>
+		</ul>
+	</footer>
+    <script>
+        function showCart(x){
+            document.getElementById("products-id").style.display = "block";
+        }
+        function closeBtn(){
+             document.getElementById("products-id").style.display = "none";
+        }
+
+    </script>
+    <script src="jquery-3.2.1.js"></script>
+    <script src="./custom.js" ></script>
+</body>
+</html>
